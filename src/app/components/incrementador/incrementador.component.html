@@ -1,0 +1,15 @@
+<h4 class="card-title"> {{ leyenda }} </h4>
+<div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <button class="btn btn-outline-primary" type="button" id="button-addon1" (click)="cambiarValor(-valor)">
+      <i class="mdi mdi-minus"></i>
+    </button>
+  </div>
+  <input type="number" class="form-control" placeholder="" aria-label="Example text with button addon"
+    aria-describedby="button-addon1" [(ngModel)]="porcentaje">
+  <div class="input-group-append">
+    <button class="btn btn-outline-primary" type="button" id="button-addon2" (click)="cambiarValor(valor)">
+      <i class="mdi mdi-plus"></i>
+    </button>
+  </div>
+</div>

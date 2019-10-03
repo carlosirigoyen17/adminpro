@@ -1,1 +1,46 @@
-<p>progress works!</p>
+<div class="row">
+  <div class="col-12">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Barra de Progreso</h4>
+        <div class="progress mb-2">
+          <div class="progress-bar progress-bar-striped progress-bar-animated" 
+            role="progressbar" 
+            [attr.ariaValuenow]="porcentaje + '%'"
+            aria-valuenow="75"
+            aria-valuemin="0" 
+            aria-valuemax="100"
+            [style.width]="porcentaje + '%'"></div>
+        </div>
+        <div class="progress mb-2">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" 
+            role="progressbar" 
+            [attr.ariaValuenow]="porcentaje + '%'"
+            aria-valuenow="75"
+            aria-valuemin="0" 
+            aria-valuemax="100"
+            [style.width]="porcentaje + '%'"></div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <!-- Un Input puede enviarse sin corchetes si se desea solo enviar un string -->
+        <!-- Un Input puede enviarse con corchetes si se desea enviar una variable desde el controlador -->
+        <app-incrementador leyenda="leyenda Azul" [porcentaje]="porcentaje"></app-incrementador>
+      </div>
+    </div>
+  </div>
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body"> 
+        <app-incrementador leyenda="leyenda Verde"></app-incrementador>
+      </div>
+    </div>
+  </div>
+</div>

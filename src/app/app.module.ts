@@ -7,6 +7,9 @@ import { AppRoutingModule } from './app.routes';
 // Modulos
 import { PagesModule } from './pages/pages.module';
 
+// temp
+import { FormsModule } from '@angular/forms';
+
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
@@ -24,6 +27,7 @@ import { NopagefoundComponent } from './shared/nopagefound/nopagefound.component
     BrowserModule,
     PagesModule,
     AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
